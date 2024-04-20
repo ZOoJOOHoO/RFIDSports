@@ -18,13 +18,13 @@ import java.util.concurrent.TimeUnit;
 
 public class test {
 
-    public static String path ="D:\\\\JAVAPROJECT\\\\rfidSport\\\\datas\\\\下蹲";
+    public static String path ="D:\\\\JAVAPROJECT\\\\rfidSport\\\\datas\\\\高抬腿";
 
     //采集间隔 period
     //下蹲 8
-    //俯卧撑 7
     //二头弯举 5
-    public static int period = 8;
+    //高抬腿 5
+    public static int period = 5;
 
     public static void main(String[] args) throws OctaneSdkException, InterruptedException {
         ImpinjReader read = new ImpinjReader();
@@ -41,7 +41,7 @@ public class test {
                 throw new RuntimeException(e);
             }
 
-            // 安排另一个任务在10秒后执行
+            // 安排另一个任务在period-1秒后执行
             executorService.schedule(() -> {
                 try {
                     read.stop();
@@ -52,7 +52,7 @@ public class test {
             }, period-1, TimeUnit.SECONDS);
         };
 
-        Thread.sleep(5000);
+        Thread.sleep(6000);
         System.out.println("start");
         executorService.scheduleAtFixedRate(timerTask, 0, period, TimeUnit.SECONDS);
         Thread.sleep(10000000);
