@@ -1,10 +1,12 @@
 import com.impinj.octane.ImpinjReader;
 import com.impinj.octane.OctaneSdkException;
+import data.TagDataList;
 import save.SaveToTxt;
 import setting.ReadSetting;
 import setting.TagReportListenerSetting;
 
 import java.io.IOException;
+import java.io.PrintStream;
 
 /**
  * @author ZJH$$$
@@ -20,6 +22,7 @@ public class test2 {
         System.out.println("start");
         Thread.sleep(10000);
         read.stop();
+        System.out.println(TagDataList.tagDataList.get(0).getPhase().size());
         System.out.println("end");
         SaveToTxt.saveToTxt("D:\\\\JAVAPROJECT\\\\rfidSport\\\\datas\\\\temp");
     }
