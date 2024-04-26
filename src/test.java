@@ -19,7 +19,7 @@ import java.util.concurrent.TimeUnit;
 public class test {
 
     //public static String path ="D:\\\\JAVAPROJECT\\\\rfidSport\\\\datas\\\\箭步蹲R";
-    public static String path ="D:\\JAVAPROJECT\\rfidSport\\newData\\PC\\侧平举\\A";
+    public static String path ="D:\\JAVAPROJECT\\rfidSport\\newData\\positionC\\箭步蹲\\A";
 
     //采集间隔 period
 
