@@ -19,10 +19,13 @@ public class test2 {
         TagReportListenerSetting.loadSetting(read);
         //Thread.sleep(3000);
         read.start();
-        System.out.println("start");
+        //System.out.println("start");
         Thread.sleep(10000);
         read.stop();
-        System.out.println(TagDataList.tagDataList.get(0).getPhase().size());
+        for (int i = 0; i < 7; i++) {
+            System.out.println(TagDataList.tagDataList.get(i).getPhase().size());
+        }
+        //System.out.println(TagDataList.tagDataList.get(4).getPhase().size());
         System.out.println("end");
         SaveToTxt.saveToTxt("D:\\\\JAVAPROJECT\\\\rfidSport\\\\datas\\\\temp");
     }

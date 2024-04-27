@@ -40,9 +40,8 @@ public class test {
         ScheduledExecutorService executorService = Executors.newScheduledThreadPool(1);
         final Runnable timerTask = () -> {
             try {
-                TagDataList.tagDataList.forEach(TagData::clearData);
-                Toolkit.getDefaultToolkit().beep();
                 read.start();
+                Toolkit.getDefaultToolkit().beep();
             } catch (OctaneSdkException e) {
                 throw new RuntimeException(e);
             }
@@ -52,6 +51,7 @@ public class test {
                 try {
                     read.stop();
                     SaveToTxt.saveToTxt(path);
+                    TagDataList.tagDataList.forEach(TagData::clearData);
                 } catch (OctaneSdkException | IOException e) {
                     throw new RuntimeException(e);
                 }
