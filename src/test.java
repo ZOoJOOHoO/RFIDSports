@@ -19,16 +19,9 @@ import java.util.concurrent.TimeUnit;
 public class test {
 
     //public static String path ="D:\\\\JAVAPROJECT\\\\rfidSport\\\\datas\\\\箭步蹲R";
-    public static String path ="D:\\JAVAPROJECT\\rfidSport\\newData\\positionC\\箭步蹲\\A";
+    public static String path ="D:\\JAVAPROJECT\\rfidSport\\newData\\positionC\\深蹲\\pk";
 
     //采集间隔 period
-
-    //下蹲 6
-    //二头弯举 5
-    //高抬腿 5
-    //侧平举 4
-    //推肩 5
-    //箭步蹲 5
 
     public static int period = 6;
 

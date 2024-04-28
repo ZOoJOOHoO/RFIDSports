@@ -22,7 +22,7 @@ public class test2 {
         //System.out.println("start");
         Thread.sleep(10000);
         read.stop();
-        for (int i = 0; i < 7; i++) {
+        for (int i = 0; i < 8; i++) {
             System.out.println(TagDataList.tagDataList.get(i).getPhase().size());
         }
         //System.out.println(TagDataList.tagDataList.get(4).getPhase().size());
