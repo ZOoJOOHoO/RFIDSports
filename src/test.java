@@ -18,11 +18,9 @@ import java.util.concurrent.TimeUnit;
 
 public class test {
 
-    //public static String path ="D:\\\\JAVAPROJECT\\\\rfidSport\\\\datas\\\\箭步蹲R";
-    public static String path ="D:\\JAVAPROJECT\\rfidSport\\newData\\positionA\\俯卧撑\\A";
+    public static String path ="D:\\JAVAPROJECT\\rfidSport\\newData\\positionA\\高抬腿\\zjs";
 
     //采集间隔 period
-
     public static int period = 6;
 
     public static void main(String[] args) throws OctaneSdkException, InterruptedException {
